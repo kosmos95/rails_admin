@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get "/test" => "test#index2"
   root "posts#index"
   resources :posts
   resources :users
