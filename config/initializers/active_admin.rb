@@ -10,6 +10,8 @@ ActiveAdmin.setup do |config|
     params.permit!
   end
 
+  # 관리자 댓글 기능 안쓸거임
+  config.comments = false
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
