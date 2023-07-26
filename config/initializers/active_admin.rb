@@ -6,6 +6,10 @@ ActiveAdmin.setup do |config|
   #
   config.site_title = "Rails Admin"
 
+  config.before_action do
+    params.permit!
+  end
+
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
   #
