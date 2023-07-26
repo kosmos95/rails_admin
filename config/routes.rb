@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
-  get "/test" => "test#index2"
-  root "posts#index"
+  get "packs/index"
+  get "packs/show"
+
+  root "home#index"
+
   resources :posts
   resources :users
   devise_for :admin_users, ActiveAdmin::Devise.config
