@@ -2,12 +2,13 @@ ActiveAdmin.register Pack do
 
   permit_params :image, :product_name, :company_name, :desc
 
-  
+  # add image_name filter
+  filter :image_name
 
   #new, edits 커스텀 부분
   form do |f|
     f.inputs do
-      f.input :image, as: :file
+      f.input :image, as: :file 
       f.input :product_name
       f.input :company_name
       f.input :desc
